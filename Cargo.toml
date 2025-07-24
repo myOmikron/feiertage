@@ -1,0 +1,9 @@
+[package]
+name = "feiertage"
+version = "0.1.0"
+edition = "2024"
+authors = ["Niklas Pfister <git@omikron.dev>"]
+license = "MPL-2.0"
+
+[dependencies]
+time = { version = "~0.3" }
