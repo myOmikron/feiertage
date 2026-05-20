@@ -50,7 +50,7 @@ use crate::holidays::Holiday;
 /// - `SachsenCatholic`: Represents catholic regions within Saxony where church-specific
 ///   holidays might differ.
 ///
-/// - `SachenProtestant`: Represents protestant regions within Saxony.
+/// - `SachsenProtestant`: Represents protestant regions within Saxony.
 ///
 /// - `SachsenAnhalt`: Represents the state of Saxony-Anhalt.
 ///
@@ -96,7 +96,7 @@ pub enum Region {
     /// It can be manually calculated via [`Holiday::Fronleichnam`].
     Sachsen,
     SachsenCatholic,
-    SachenProtestant,
+    SachsenProtestant,
     SachsenAnhalt,
     SchleswigHolstein,
     /// Fronleichnam applies only to a minority of communities and has been excluded by default.
@@ -186,7 +186,7 @@ impl Region {
                 Holiday::Fronleichnam,
                 Holiday::BussUndBettag,
             ]),
-            Region::SachenProtestant => {
+            Region::SachsenProtestant => {
                 Vec::from([Holiday::Reformationstag, Holiday::BussUndBettag])
             }
             Region::SachsenAnhalt => {
